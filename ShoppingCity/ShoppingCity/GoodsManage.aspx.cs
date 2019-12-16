@@ -13,5 +13,10 @@ namespace ShoppingCity
         {
 
         }
+
+        protected void btnAdd_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AddGood.aspx");
+        }
     }
 }

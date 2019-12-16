@@ -68,12 +68,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddGood.aspx" />
     <Content Include="App_Data\SMDB.mdf" />
     <Content Include="App_Data\SMDB_log.ldf">
       <DependentUpon>SMDB.mdf</DependentUpon>
     </Content>
     <Content Include="css\login.css" />
     <Content Include="css\master.css" />
+    <Content Include="EditGood.aspx" />
     <Content Include="GoodsInfo.aspx" />
     <Content Include="GoodsList.aspx" />
     <Content Include="GoodsManage.aspx" />
@@ -122,10 +124,24 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddGood.aspx.cs">
+      <DependentUpon>AddGood.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddGood.aspx.designer.cs">
+      <DependentUpon>AddGood.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BBS.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BBS.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="EditGood.aspx.cs">
+      <DependentUpon>EditGood.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditGood.aspx.designer.cs">
+      <DependentUpon>EditGood.aspx</DependentUpon>
     </Compile>
     <Compile Include="GoodsInfo.aspx.cs">
       <DependentUpon>GoodsInfo.aspx</DependentUpon>
@@ -161,6 +177,11 @@
     </Compile>
     <Compile Include="GoodsTypeManage.aspx.designer.cs">
       <DependentUpon>GoodsTypeManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GoodType.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GoodType.dbml</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -214,6 +235,14 @@
     </Content>
     <None Include="BBS.dbml.layout">
       <DependentUpon>BBS.dbml</DependentUpon>
+    </None>
+    <Content Include="GoodType.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>GoodType.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="GoodType.dbml.layout">
+      <DependentUpon>GoodType.dbml</DependentUpon>
     </None>
     <None Include="packages.config" />
     <Content Include="ShoppingCity.Master" />
