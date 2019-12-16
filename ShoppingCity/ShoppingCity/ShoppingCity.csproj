@@ -44,6 +44,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -67,12 +68,52 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\SMDB.mdf" />
+    <Content Include="App_Data\SMDB_log.ldf">
+      <DependentUpon>SMDB.mdf</DependentUpon>
+    </Content>
+    <Content Include="css\login.css" />
+    <Content Include="css\master.css" />
     <Content Include="GoodsInfo.aspx" />
     <Content Include="GoodsList.aspx" />
     <Content Include="GoodsManage.aspx" />
     <Content Include="GoodsOpinion.aspx" />
     <Content Include="GoodsTypeManage.aspx" />
-    <Content Include="ico\happy.ico" />
+    <Content Include="ico\Hi_Go.ico" />
+    <Content Include="images\goods\1.jpg" />
+    <Content Include="images\goods\10.jpg" />
+    <Content Include="images\goods\12.jpg" />
+    <Content Include="images\goods\13.jpg" />
+    <Content Include="images\goods\14.jpg" />
+    <Content Include="images\goods\15.jpg" />
+    <Content Include="images\goods\16.jpg" />
+    <Content Include="images\goods\17.jpg" />
+    <Content Include="images\goods\2.jpg" />
+    <Content Include="images\goods\3.jpg" />
+    <Content Include="images\goods\4.jpg" />
+    <Content Include="images\goods\5.jpg" />
+    <Content Include="images\goods\6.jpg" />
+    <Content Include="images\goods\7.jpg" />
+    <Content Include="images\goods\8.jpg" />
+    <Content Include="images\goods\9.jpg" />
+    <Content Include="images\goods\l1.JPG" />
+    <Content Include="images\goods\l10.JPG" />
+    <Content Include="images\goods\l12.JPG" />
+    <Content Include="images\goods\l13.JPG" />
+    <Content Include="images\goods\l14.JPG" />
+    <Content Include="images\goods\l15.JPG" />
+    <Content Include="images\goods\l16.JPG" />
+    <Content Include="images\goods\l17.JPG" />
+    <Content Include="images\goods\l2.JPG" />
+    <Content Include="images\goods\l3.JPG" />
+    <Content Include="images\goods\l4.JPG" />
+    <Content Include="images\goods\l5.JPG" />
+    <Content Include="images\goods\l6.JPG" />
+    <Content Include="images\goods\l7.JPG" />
+    <Content Include="images\goods\l8.JPG" />
+    <Content Include="images\goods\l9.JPG" />
+    <Content Include="images\login_back.jpg" />
+    <Content Include="images\master_back.png" />
     <Content Include="Login.aspx" />
     <Content Include="MessageManage.aspx" />
     <Content Include="MessageReply.aspx" />
@@ -81,6 +122,11 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BBS.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BBS.dbml</DependentUpon>
+    </Compile>
     <Compile Include="GoodsInfo.aspx.cs">
       <DependentUpon>GoodsInfo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -161,6 +207,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BBS.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>BBS.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="BBS.dbml.layout">
+      <DependentUpon>BBS.dbml</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <Content Include="ShoppingCity.Master" />
     <None Include="Web.Debug.config">
@@ -169,6 +223,12 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="js\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -5,9 +5,10 @@
 <html>
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>乐淘</title>
-    <link rel="Shortcut Icon" href="ico/happy.ico" />
-    <link rel="Bookmark" href="ico/happy.ico" />
+    <title>Hi Go</title>
+    <link rel="Shortcut Icon" href="ico/Hi_Go.ico" />
+    <link rel="Bookmark" href="ico/Hi_Go.ico" />
+    <link href="css/master.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
