@@ -82,6 +82,7 @@
     <Content Include="GoodsOpinion.aspx" />
     <Content Include="GoodsTypeManage.aspx" />
     <Content Include="ico\Hi_Go.ico" />
+    <Content Include="images\add.png" />
     <Content Include="images\goods\1.jpg" />
     <Content Include="images\goods\10.jpg" />
     <Content Include="images\goods\12.jpg" />
@@ -116,6 +117,7 @@
     <Content Include="images\goods\l9.JPG" />
     <Content Include="images\login_back.jpg" />
     <Content Include="images\master_back.png" />
+    <Content Include="images\send.png" />
     <Content Include="Login.aspx" />
     <Content Include="MessageManage.aspx" />
     <Content Include="MessageReply.aspx" />

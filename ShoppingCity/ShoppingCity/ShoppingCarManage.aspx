@@ -80,7 +80,7 @@
                         </ItemTemplate>
                         <FooterTemplate>
                             <a href="Order.aspx">
-                                <asp:ImageButton ID="imageComp" runat="server" CssClass="noborder" ImageUrl="images/icon/comp.jpg" />
+                                <asp:ImageButton ID="imageComp" runat="server" CssClass="noborder" ImageUrl="images/send.png" AlternateText="结算" />
                             </a>
                         </FooterTemplate>
                         <ItemStyle CssClass="center" />
