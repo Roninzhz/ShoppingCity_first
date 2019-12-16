@@ -72,6 +72,7 @@
     <Content Include="GoodsManage.aspx" />
     <Content Include="GoodsOpinion.aspx" />
     <Content Include="GoodsTypeManage.aspx" />
+    <Content Include="ico\happy.ico" />
     <Content Include="Login.aspx" />
     <Content Include="MessageManage.aspx" />
     <Content Include="MessageReply.aspx" />
