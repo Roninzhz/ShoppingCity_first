@@ -6,6 +6,7 @@
             【商品管理】<br />
             ----------------------------------------------------------------------------------------------------------------------<br />
             <asp:Button ID="btnAdd" runat="server"  Text="添加商品" OnClick="btnAdd_Click" />
+            <asp:Button ID="btnEdit" runat="server"  Text="修改商品类型" OnClick="btnEdit_Click"/>
         </div><br /><br />
         <div>
             <asp:GridView ID="grdGoods" runat="server" AutoGenerateColumns="false" DataKeyNames="gdID" BorderWidth="1px" AllowPaging="true" DataSourceID="sqlGoods" PageSize="5">
@@ -29,7 +30,7 @@
                 </Columns>
                 <PagerSettings FirstPageText="首页" LastPageText="末页" Mode="NextPreviousFirstLast" NextPageText="下一页" PreviousPageText="上一页" />
             </asp:GridView>
-            <asp:SqlDataSource ID="sqlGoods" runat="server" ConnectionString="<%$ConnectionStrings:smdb%>" SelectCommand="select Goods.*,tName from Goods join GoodsType on Goods.tID=GoodsType.tID order by gdAddTime" DeleteCommand="delete from Goods where gdID=@gdID">
+            <asp:SqlDataSource ID="sqlGoods" runat="server" ConnectionString="<%$ConnectionStrings:SMDB%>" SelectCommand="select Goods.*,tName from Goods join GoodsType on Goods.tID=GoodsType.tID order by gdAddTime" DeleteCommand="delete from Goods where gdID=@gdID">
                 <DeleteParameters>
                     <asp:Parameter Name="gdID" Type="Int32" />
                 </DeleteParameters>

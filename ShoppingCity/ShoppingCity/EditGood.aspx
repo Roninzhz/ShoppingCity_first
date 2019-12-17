@@ -9,7 +9,7 @@
             <br />
             商品类别：<asp:DropDownList ID="ddlType" runat="server" DataSourceID="SqlDataSource1" DataTextField="tName" DataValueField="tID">
             </asp:DropDownList>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SMDBConnectionString %>" SelectCommand="SELECT * FROM GoodsType"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SMDB%>" SelectCommand="SELECT * FROM GoodsType"></asp:SqlDataSource>
             <br />
             编号：<asp:TextBox ID="txtCode" runat="server"></asp:TextBox>
             <br />

@@ -42,7 +42,7 @@ namespace ShoppingCity
     #endregion
 		
 		public BBSDataContext() : 
-				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["SMDBConnectionString"].ConnectionString, mappingSource)
+				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["SMDB"].ConnectionString, mappingSource)
 		{
 			OnCreated();
 		}

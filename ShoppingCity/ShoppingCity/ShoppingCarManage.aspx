@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <div>
+     <div style="position:relative; left:30%;">
             <br />
             【购物车】<asp:Literal ID="ltCurUser" runat="server"></asp:Literal>
 

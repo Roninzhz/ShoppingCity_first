@@ -18,5 +18,10 @@ namespace ShoppingCity
         {
             Response.Redirect("AddGood.aspx");
         }
+
+        protected void btnEdit_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("GoodsTypeManage.aspx");
+        }
     }
 }

@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace ShoppingCity
@@ -17,9 +13,13 @@ namespace ShoppingCity
         {
             ltCurUser.Text = "当前用户：游客";
             if (Session["uName"] != null)
+            {
                 ltCurUser.Text = "当前用户：" + Session["uName"];
+            }
             else
+            {
                 ClientScript.RegisterStartupScript(GetType(), "", "<script>alert('请先登录');location.href='Login.aspx';</script>");
+            }
         }
 
         protected void grdGoods_RowDataBound(object sender, GridViewRowEventArgs e)
@@ -29,7 +29,9 @@ namespace ShoppingCity
                 Literal ltl = (Literal)e.Row.FindControl("ltlSum");
                 string strSum = ltl.Text;
                 if (!string.IsNullOrEmpty(strSum))
+                {
                     sum += Convert.ToDouble(strSum);
+                }
             }
             else if (e.Row.RowType == DataControlRowType.Footer)
             {
@@ -130,6 +132,6 @@ namespace ShoppingCity
                     lt.Text = "全选";
                 }
             }
+        }
     }
-}
 }

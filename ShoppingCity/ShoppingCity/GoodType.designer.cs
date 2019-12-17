@@ -36,7 +36,7 @@ namespace ShoppingCity
     #endregion
 		
 		public GoodTypeDataContext() : 
-				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["SMDBConnectionString"].ConnectionString, mappingSource)
+				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["SMDB"].ConnectionString, mappingSource)
 		{
 			OnCreated();
 		}

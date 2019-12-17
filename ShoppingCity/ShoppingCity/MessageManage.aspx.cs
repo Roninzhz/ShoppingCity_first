@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace ShoppingCity
 {
@@ -11,8 +6,10 @@ namespace ShoppingCity
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["uName"] == null) 
+            if (Session["uName"] == null)
+            {
                 ClientScript.RegisterStartupScript(GetType(), "", "<script>alert('请先登录');location.href='Login.aspx';</script>");
+            }
         }
 
         protected void btnSave_Click(object sender, EventArgs e)
@@ -21,7 +18,7 @@ namespace ShoppingCity
             BBSNote note = new BBSNote();
             note.bnSubject = txtbnSubject.Text;
             note.bnContent = txtbnContent.Text;
-             note.bnID = Convert.ToInt16(Session["uID"].ToString());
+            note.bnID = Convert.ToInt16(Session["uID"].ToString());
             note.bnAddTime = System.DateTime.Now;
             lq.BBSNote.InsertOnSubmit(note);
             lq.SubmitChanges();

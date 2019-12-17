@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.IO;
-using System.Linq;
 using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace ShoppingCity
@@ -20,7 +17,9 @@ namespace ShoppingCity
             {
                 id = int.Parse(Request["gdID"].ToString());
                 if (!IsPostBack)
+                {
                     dispGoodInfo();
+                }
             }
         }
 
@@ -106,9 +105,13 @@ namespace ShoppingCity
                                 };
                 cmd.Parameters.AddRange(ps);
                 if (cmd.ExecuteNonQuery() > 0)
+                {
                     Response.Write("<script>alert('更新成功');location.href('GoodsManage.aspx')</script>");
+                }
                 else
+                {
                     Response.Write("<script>alert('更新失败')</script>");
+                }
             }
         }
     }

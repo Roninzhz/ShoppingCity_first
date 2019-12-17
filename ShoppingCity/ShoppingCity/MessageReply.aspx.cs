@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace ShoppingCity
 {
@@ -12,9 +7,14 @@ namespace ShoppingCity
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["uID"] == null)
+            {
                 ClientScript.RegisterStartupScript(GetType(), "", "<script>alert('请先登录！');location.href='Login.aspx'</script");
+            }
+
             if (Session["id"] == null)
+            {
                 ClientScript.RegisterStartupScript(GetType(), "", "<script>alert('请选择留言主题！');location.href='MessageManage.aspx'</script");
+            }
         }
 
         protected void btnSave_Click(object sender, EventArgs e)

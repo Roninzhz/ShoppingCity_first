@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div>
+    <div style="position:relative; left:30%;">
             <asp:Repeater ID="repBBSNote" runat="server" DataSourceID="linqNote" >
             <ItemTemplate>
                <p style="text-align:left; font-size:14px"><asp:Label ID="Label5" runat="server" Text='<%# Eval("bnSubject") %>' /></p>              

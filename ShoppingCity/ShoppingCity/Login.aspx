@@ -8,7 +8,7 @@
     <title>Hi Go用户登录</title>
     <link rel="Shortcut Icon" href="ico/Hi_Go.ico" />
     <link rel="Bookmark" href="ico/Hi_Go.ico" />
-    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
     <link href="css/login.css" rel="stylesheet" />
 </head>
 <body>

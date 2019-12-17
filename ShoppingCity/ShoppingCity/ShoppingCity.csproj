@@ -118,6 +118,7 @@
     <Content Include="images\login_back.jpg" />
     <Content Include="images\master_back.png" />
     <Content Include="images\send.png" />
+    <Content Include="js\jquery-3.4.1.min.js" />
     <Content Include="Login.aspx" />
     <Content Include="MessageManage.aspx" />
     <Content Include="MessageReply.aspx" />
@@ -255,9 +256,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="js\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>

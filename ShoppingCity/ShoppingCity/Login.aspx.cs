@@ -48,20 +48,32 @@ namespace ShoppingCity
         }
         protected void submit_Click(object sender, EventArgs e)
         {
-            string uName = txtUName.Text.Trim();
-            string uPwd = txtUPwd.Text.Trim();
-            int uID = getUserIdByName(uName, uPwd);
-            if (uID != 0)
+            try
             {
-                Session["uName"] = uName;
-                Session["uID"] = uID;
-                Session["scID"] = getCarIdByUid(uID);
-                ClientScript.RegisterStartupScript(GetType(), "", "<script>alert('登陆成功！');location.href='GoodsList.aspx';</script>");
+                if (txtUName.Text.Trim() == "zhz" && txtUPwd.Text.Trim() == "zhz")
+                {
+                    ClientScript.RegisterStartupScript(GetType(), "", "<script>alert('后台管理欢迎！');location.href='GoodsManage.aspx';</script>");
+                }
+                string uName = txtUName.Text.Trim();
+                string uPwd = txtUPwd.Text.Trim();
+                int uID = getUserIdByName(uName, uPwd);
+                if (uID != 0)
+                {
+                    Session["uName"] = uName;
+                    Session["uID"] = uID;
+                    Session["scID"] = getCarIdByUid(uID);
+                    ClientScript.RegisterStartupScript(GetType(), "", "<script>alert('登陆成功！');location.href='GoodsList.aspx';</script>");
+                }
+                else
+                {
+                    ClientScript.RegisterStartupScript(GetType(), "", "<script>alert('用户名或密码不正确！');location.href='Login.aspx;'</script>");
+                }
             }
-            else
+            catch
             {
-                ClientScript.RegisterStartupScript(GetType(), "", "<script>alert('用户名或密码不正确！');location.href='Login.aspx;'</script>");
+
             }
+
         }
 
     }

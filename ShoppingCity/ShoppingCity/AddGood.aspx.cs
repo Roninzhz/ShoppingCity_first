@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.IO;
-using System.Linq;
 using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace ShoppingCity
@@ -77,9 +74,13 @@ namespace ShoppingCity
                                 };
                 cmd.Parameters.AddRange(ps);
                 if (cmd.ExecuteNonQuery() > 0)
+                {
                     ClientScript.RegisterStartupScript(GetType(), "", "<script>alert('添加成功');location.href('GoodsManage.aspx')</script>");
+                }
                 else
+                {
                     ClientScript.RegisterStartupScript(GetType(), "", "<script>alert('添加失败')</script>");
+                }
             }
         }
     }
