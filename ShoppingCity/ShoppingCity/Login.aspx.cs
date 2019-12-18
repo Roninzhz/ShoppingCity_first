@@ -50,7 +50,7 @@ namespace ShoppingCity
         {
             try
             {
-                if (txtUName.Text.Trim() == "zhz" && txtUPwd.Text.Trim() == "zhz")
+                if (txtUName.Text.Trim() == "123" && txtUPwd.Text.Trim() == "123")
                 {
                     ClientScript.RegisterStartupScript(GetType(), "", "<script>alert('后台管理欢迎！');location.href='GoodsManage.aspx';</script>");
                 }
@@ -63,17 +63,13 @@ namespace ShoppingCity
                     Session["uID"] = uID;
                     Session["scID"] = getCarIdByUid(uID);
                     ClientScript.RegisterStartupScript(GetType(), "", "<script>alert('登陆成功！');location.href='GoodsList.aspx';</script>");
-                }
-                else
-                {
-                    ClientScript.RegisterStartupScript(GetType(), "", "<script>alert('用户名或密码不正确！');location.href='Login.aspx;'</script>");
-                }
+                }     
             }
             catch
             {
 
             }
-
+            ClientScript.RegisterStartupScript(GetType(), "", "<script>alert('用户名或密码不正确！');location.href='Login.aspx';</script>");
         }
 
     }
