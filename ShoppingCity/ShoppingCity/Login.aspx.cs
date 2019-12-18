@@ -63,7 +63,7 @@ namespace ShoppingCity
                     Session["uID"] = uID;
                     Session["scID"] = getCarIdByUid(uID);
                     ClientScript.RegisterStartupScript(GetType(), "", "<script>alert('登陆成功！');location.href='GoodsList.aspx';</script>");
-                }     
+                }
             }
             catch
             {

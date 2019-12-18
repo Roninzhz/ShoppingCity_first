@@ -19,7 +19,7 @@ namespace ShoppingCity
 
         protected void btnSave_Click(object sender, EventArgs e)
         {
-            if(txtbaContent.Text=="")
+            if (txtbaContent.Text == "")
             {
                 ClientScript.RegisterStartupScript(GetType(), "", "<script>alert('留言不能为空！');</script>");
                 return;

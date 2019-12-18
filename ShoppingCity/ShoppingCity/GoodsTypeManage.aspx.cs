@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace ShoppingCity
 {
@@ -43,7 +39,10 @@ namespace ShoppingCity
             GoodTypeDataContext lq = new GoodTypeDataContext();
             var types = from gt in lq.GoodsType where gt.tName == txtNamebe.Text.Trim() select gt;
             foreach (var type in types)
+            {
                 type.tName = txtNameaf.Text.Trim();
+            }
+
             lq.SubmitChanges();
         }
 
@@ -58,7 +57,10 @@ namespace ShoppingCity
             GoodTypeDataContext lq = new GoodTypeDataContext();
             var types = from gt in lq.GoodsType where gt.tName == txtNameDe.Text.Trim() select gt;
             foreach (var type in types)
+            {
                 lq.GoodsType.DeleteOnSubmit(type);
+            }
+
             lq.SubmitChanges();
         }
     }

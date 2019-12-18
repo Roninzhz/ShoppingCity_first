@@ -9,13 +9,33 @@
     <link rel="Shortcut Icon" href="ico/Hi_Go.ico" />
     <link rel="Bookmark" href="ico/Hi_Go.ico" />
     <link href="css/master.css" rel="stylesheet" />
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/nav.js"></script>
+    <link href="css/nav.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
-        
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
-      
+        <div class="menu">
+            <div class="menu-item current-menu-item">
+                <h6>Home</h6>
+                <div class="wee"></div>
+            </div>
+            <div class="menu-item">
+                <h6>Contact</h6>
+            </div>
+            <div class="menu-item">
+                <h6>About</h6>
+            </div>
+            <div class="menu-item">
+                <h6>Blog</h6>
+            </div>
+            <div class="menu-item">
+                <h6>Jobs</h6>
+            </div>
+        </div>
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>

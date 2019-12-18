@@ -1,5 +1,8 @@
 ﻿<%@ Page Title="Hi Go商品列表" Language="C#" MasterPageFile="~/ShoppingCity.Master" AutoEventWireup="true" CodeBehind="GoodsList.aspx.cs" Inherits="ShoppingCity.GoodsList" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script src="js/jquery-3.4.1.min.js"></script>
+        <link href="css/picstyle.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/search.css" type="text/css" />
     <style type="text/css">
         .tb{width:200px;height:300px;}
         a{text-decoration:none;}
@@ -9,7 +12,41 @@
         </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <div style="position:relative; left:30%;">
+  <div class="zySearch" id="zySearch"></div>
+<script type="text/javascript" src="js/zySearch.js"></script>
+<script type="text/javascript">
+    $("#zySearch").zySearch({
+        "width": "355",
+        "height": "33",
+        "parentClass": "pageTitle",
+        "callback": function (keyword) {
+            console.info("搜索的关键字");
+            console.info(keyword);
+        }
+    });
+</script>
+     <p id="loading">loading...</p>
+        <div id="images">
+            <div class="lighten">
+                <img src="images/lighten1.jpg" alt="" />
+                <img src="images/lighten2.jpg" alt="" />
+                <img src="images/lighten3.jpg" alt="" />
+                <img src="images/lighten4.jpg" alt="" />
+            </div>
+            <div class="normal">
+                <img src="images/normal1.jpg" alt="" />
+                <img src="images/normal2.jpg" alt="" />
+                <img src="images/normal3.jpg" alt="" />
+                <img src="images/normal4.jpg" alt="" />
+            </div>
+            <nav>
+                <ul>
+                    <li class="pre"></li>
+                    <li class="next"></li>
+                </ul>
+            </nav>
+        </div>
+     <div>
             <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="留言" />
             <asp:Button ID="btnChu" runat="server" OnClick="btnChu_Click" Text="登出" />
             <br />

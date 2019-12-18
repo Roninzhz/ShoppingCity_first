@@ -76,6 +76,9 @@
     </Content>
     <Content Include="css\login.css" />
     <Content Include="css\master.css" />
+    <Content Include="css\nav.css" />
+    <Content Include="css\picstyle.css" />
+    <Content Include="css\search.css" />
     <Content Include="EditGood.aspx" />
     <Content Include="GoodsInfo.aspx" />
     <Content Include="GoodsList.aspx" />
@@ -84,6 +87,7 @@
     <Content Include="GoodsTypeManage.aspx" />
     <Content Include="ico\Hi_Go.ico" />
     <Content Include="images\add.png" />
+    <Content Include="images\chicken.gif" />
     <Content Include="images\delect.png" />
     <Content Include="images\edit.png" />
     <Content Include="images\edit1.png" />
@@ -119,10 +123,21 @@
     <Content Include="images\goods\l7.JPG" />
     <Content Include="images\goods\l8.JPG" />
     <Content Include="images\goods\l9.JPG" />
+    <Content Include="images\lighten1.jpg" />
+    <Content Include="images\lighten2.jpg" />
+    <Content Include="images\lighten3.jpg" />
+    <Content Include="images\lighten4.jpg" />
     <Content Include="images\login_back.jpg" />
     <Content Include="images\master_back.png" />
+    <Content Include="images\normal1.jpg" />
+    <Content Include="images\normal2.jpg" />
+    <Content Include="images\normal3.jpg" />
+    <Content Include="images\normal4.jpg" />
     <Content Include="images\send.png" />
+    <Content Include="js\index.js" />
     <Content Include="js\jquery-3.4.1.min.js" />
+    <Content Include="js\nav.js" />
+    <Content Include="js\zySearch.js" />
     <Content Include="Login.aspx" />
     <Content Include="MessageManage.aspx" />
     <Content Include="MessageReply.aspx" />
