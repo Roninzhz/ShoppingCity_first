@@ -11,6 +11,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
      <div style="position:relative; left:30%;">
             <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="留言" />
+            <asp:Button ID="btnChu" runat="server" OnClick="btnChu_Click" Text="登出" />
             <br />
             【商品展示】<asp:Literal ID="ltCurUser" runat="server"></asp:Literal>
             <br />

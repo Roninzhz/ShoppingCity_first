@@ -4,6 +4,7 @@ namespace ShoppingCity
 {
     public partial class MessageManage : System.Web.UI.Page
     {
+        //主题不能为空,内容不能为空
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["uName"] == null)

@@ -9,6 +9,7 @@ namespace ShoppingCity
 {
     public partial class GoodsList : System.Web.UI.Page
     {
+        //价格区间单输入一个给出提示,给出完整的价格区间,再在价格区间的两个txt加判定前者不可大于或等于后者
         protected void Page_Load(object sender, EventArgs e)
         {
             ltCurUser.Text = "当前用户：游客";
@@ -152,6 +153,11 @@ namespace ShoppingCity
         protected void Button1_Click(object sender, EventArgs e)
         {
             Response.Redirect("MessageManage.aspx");
+        }
+
+        protected void btnChu_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Login.aspx");
         }
     }
 }

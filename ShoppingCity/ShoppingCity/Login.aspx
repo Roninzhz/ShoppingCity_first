@@ -28,7 +28,6 @@
          <br />
          <asp:ValidationSummary ID="Vs" runat="server" />
          <asp:Button ID="submit" runat="server" Text="submit"  CssClass="logbtn" OnClick="submit_Click"/>
-          <asp:CheckBox ID="chkState" runat="server" Text="两周内不用登录" />
             &nbsp;<div class="bottom-text">
                 Don't have account?<a href="Register.aspx">Sign up</a>
             </div>

@@ -16,6 +16,9 @@
                 background-size:cover;
                 background-position:center 0;
              }
+        .auto-style1 {
+            height: 25px;
+        }
     </style>
 </head>
 <body>
@@ -59,7 +62,9 @@
                 </td>
             </tr>
             <tr>
-                <td>邮箱：<asp:TextBox ID="txtuEmail" runat="server"></asp:TextBox>
+                <td class="auto-style1">邮箱：<asp:TextBox ID="txtuEmail" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="reqtxtuEmail" runat="server" ControlToValidate="txtuEmail" ErrorMessage="*" ForeColor="#FF3300"></asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="txtuEmail" ErrorMessage="请输入正确的电子邮件" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ForeColor="#FF3300"></asp:RegularExpressionValidator>
                 </td>
             </tr>
             <tr>
@@ -67,7 +72,9 @@
                 </td>
             </tr>
             <tr>
-                <td>手机：<asp:TextBox ID="txtuPhone" runat="server"></asp:TextBox>
+                <td>手机：<asp:TextBox ID="txtuPhone" runat="server" TextMode="Phone"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtuPhone" ErrorMessage="*" ForeColor="#FF3300"></asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtuPhone" Display="Dynamic" ErrorMessage="请输入正确的手机号码" ForeColor="Red" ValidationExpression="(\(\d{3}\)|\d{3})?\d{8}"></asp:RegularExpressionValidator>
                 </td>
             </tr>
             <tr>

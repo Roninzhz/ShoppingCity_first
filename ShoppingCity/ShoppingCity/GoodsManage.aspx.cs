@@ -23,5 +23,10 @@ namespace ShoppingCity
         {
             Response.Redirect("GoodsTypeManage.aspx");
         }
+
+        protected void btnChu_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Login.aspx");
+        }
     }
 }

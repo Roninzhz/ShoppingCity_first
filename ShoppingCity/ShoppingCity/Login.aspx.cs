@@ -6,6 +6,8 @@ namespace ShoppingCity
 {
     public partial class Login : System.Web.UI.Page
     {
+        //注册用户名不可重复,注册的用户无法登陆，在所有子页面添加首页按钮，方便回到首页 注意：不同的登录身份，有不同的首页
+        //删除头像，删除自动登录
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -50,7 +52,7 @@ namespace ShoppingCity
         {
             try
             {
-                if (txtUName.Text.Trim() == "zhz" && txtUPwd.Text.Trim() == "zhz")
+                if (txtUName.Text.Trim() == "000" && txtUPwd.Text.Trim() == "000")
                 {
                     ClientScript.RegisterStartupScript(GetType(), "", "<script>alert('后台管理欢迎！');location.href='GoodsManage.aspx';</script>");
                 }
@@ -64,10 +66,10 @@ namespace ShoppingCity
                     Session["scID"] = getCarIdByUid(uID);
                     ClientScript.RegisterStartupScript(GetType(), "", "<script>alert('登陆成功！');location.href='GoodsList.aspx';</script>");
                 }
-                else
-                {
-                    ClientScript.RegisterStartupScript(GetType(), "", "<script>alert('用户名或密码不正确！');location.href='Login.aspx;'</script>");
-                }
+                //else
+                //{
+                //    ClientScript.RegisterStartupScript(GetType(), "", "<script>alert('用户名或密码不正确！');location.href='Login.aspx;'</script>");
+                //}
             }
             catch
             {

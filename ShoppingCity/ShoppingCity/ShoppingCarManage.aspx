@@ -5,7 +5,7 @@
      <div style="position:relative; left:30%;">
             <br />
             【购物车】<asp:Literal ID="ltCurUser" runat="server"></asp:Literal>
-
+         <%-- 增加了修改数量的图标 --%>
             ----------------------------------------------------------------------------------------------
             <asp:SqlDataSource ProviderName="System.Data.SqlClient" ID="sqlGoods" runat="server" ConnectionString="<%$ ConnectionStrings:SMDB %>" DeleteCommand="upDelScarInfoBySciID" DeleteCommandType="StoredProcedure" SelectCommand="upGetInfoByScid" SelectCommandType="StoredProcedure" UpdateCommand="upUpdateNumBySciID" UpdateCommandType="StoredProcedure">
                 <SelectParameters>
@@ -57,7 +57,7 @@
                     <asp:TemplateField HeaderText="数量" ItemStyle-CssClass="center">
                         <ItemTemplate>
                             <asp:TextBox ID="txtNum" runat="server" Width="20px" Text='<%# Bind("scNum") %>' />
-                            <asp:ImageButton ID="ibtnUpdate"  ImageUrl="images/icon/edit.png" runat="server" CausesValidation="false" ToolTip="单击更新数量" CommandName="Update" AlternateText="更新" OnClientClick="return confirm('确定要修改该商品的数量？');"/>
+                            <asp:ImageButton ID="ibtnUpdate"  ImageUrl="images/edit1.png" runat="server" CausesValidation="false" ToolTip="单击更新数量" CommandName="Update" AlternateText="更新" OnClientClick="return confirm('确定要修改该商品的数量？');"/>
                         </ItemTemplate>
                         <FooterTemplate>
                             <asp:Literal ID="ltlTotal" runat="server" Text="商品总价"></asp:Literal>
