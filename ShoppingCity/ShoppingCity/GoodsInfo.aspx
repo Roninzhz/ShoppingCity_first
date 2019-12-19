@@ -34,7 +34,22 @@
             <td colspan="2">
                 <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="images/send.png" OnClick="ImageButton1_Click" />
             </td>
-            <td>&nbsp;</td>
+            <td> <div>
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="LinqDataSource1" DataKeyNames="gdID">
+                <Columns>
+                    <asp:BoundField DataField="geContent" HeaderText="评价" SortExpression="geContent" />
+                    <asp:BoundField DataField="geAddTime" HeaderText="评价时间" SortExpression="geAddTime" />
+                </Columns>
+            </asp:GridView>
+            <asp:LinqDataSource ID="LinqDataSource1" runat="server" ContextTypeName="ShoppingCity.pingjiaDataContext" TableName="GoodEvaluate" Where="gdID == @gdID" EntityTypeName="">
+                <WhereParameters>
+                    <asp:QueryStringParameter Name="gdID" QueryStringField="gdid" Type="Int32" />
+                </WhereParameters>
+            </asp:LinqDataSource>
+                <br />
+                <%--<asp:TextBox ID="txtbnContent" runat="server" Height="85px" TextMode="MultiLine" Width="460px"></asp:TextBox>
+            <asp:Button ID="btnSave" runat="server" OnClick="btnSave_Click" Text="评价" />
+        </div></td>--%>
         </tr>
     </table>
 </asp:Content>

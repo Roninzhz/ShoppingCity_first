@@ -80,5 +80,25 @@ namespace ShoppingCity
                 ClientScript.RegisterStartupScript(GetType(), "", "<script>alert('请先登录');location.href='Login.aspx';</script>");
             }
         }
+
+        protected void btnSave_Click(object sender, EventArgs e)
+        {
+            if (txtbnContent.Text == "")
+            {
+                ClientScript.RegisterStartupScript(GetType(), "", "<script>alert('内容不能为空');</script>");
+                return;
+            }
+            else
+            {
+                pingjiaDataContext pi = new pingjiaDataContext();
+                GoodEvaluate goodE = new GoodEvaluate();
+                goodE.gdID = 
+                goodE.geContent = txtbnContent.Text.Trim();
+                goodE.geAddTime = System.DateTime.Now;
+                pi.GoodEvaluate.InsertOnSubmit(goodE);
+                pi.SubmitChanges();
+                Response.Redirect("GoodsInfo.aspx");
+            }
+        }
     }
 }

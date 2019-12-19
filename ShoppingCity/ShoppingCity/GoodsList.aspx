@@ -104,7 +104,6 @@
                     </tr>
                     <td class="tdaddshop">
                         <asp:ImageButton CommandName="addShop" runat="server" AlternateText="加入到购物车" ImageUrl="images/add.png" />
-                        <a href="pingjia.aspx?gdID=<%# Eval("gdID") %>">查看评价</a>
                     </td>
                 </table>
             </ItemTemplate>
@@ -141,7 +140,6 @@
                      </tr>
                      <td class="tdaddshop">
                          <asp:ImageButton CommandName="addShop" runat="server" AlternateText="加入到购物车" ImageUrl="images/add.png" />
-                         <a href="pingjia.aspx?gdID=<%# Eval("gdID") %>">查看评价</a>
                      </td>
                  </table>
              </ItemTemplate>

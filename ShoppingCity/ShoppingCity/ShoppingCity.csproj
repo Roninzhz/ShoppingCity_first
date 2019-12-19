@@ -83,13 +83,10 @@
     <Content Include="GoodsInfo.aspx" />
     <Content Include="GoodsList.aspx" />
     <Content Include="GoodsManage.aspx" />
-    <Content Include="GoodsOpinion.aspx" />
     <Content Include="GoodsTypeManage.aspx" />
     <Content Include="ico\Hi_Go.ico" />
     <Content Include="images\bananer.png" />
-    <Content Include="images\back.png" />
     <Content Include="images\add.png" />
-    <Content Include="images\chicken.gif" />
     <Content Include="images\delect.png" />
     <Content Include="images\edit.png" />
     <Content Include="images\edit1.png" />
@@ -143,7 +140,6 @@
     <Content Include="Login.aspx" />
     <Content Include="MessageManage.aspx" />
     <Content Include="MessageReply.aspx" />
-    <Content Include="pingjia.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="ShoppingCarManage.aspx" />
     <Content Include="success.aspx" />
@@ -197,13 +193,6 @@
     <Compile Include="GoodsManage.aspx.designer.cs">
       <DependentUpon>GoodsManage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="GoodsOpinion.aspx.cs">
-      <DependentUpon>GoodsOpinion.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="GoodsOpinion.aspx.designer.cs">
-      <DependentUpon>GoodsOpinion.aspx</DependentUpon>
-    </Compile>
     <Compile Include="GoodsTypeManage.aspx.cs">
       <DependentUpon>GoodsTypeManage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -236,13 +225,6 @@
     </Compile>
     <Compile Include="MessageReply.aspx.designer.cs">
       <DependentUpon>MessageReply.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="pingjia.aspx.cs">
-      <DependentUpon>pingjia.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="pingjia.aspx.designer.cs">
-      <DependentUpon>pingjia.aspx</DependentUpon>
     </Compile>
     <Compile Include="pingjia.designer.cs">
       <AutoGen>True</AutoGen>
