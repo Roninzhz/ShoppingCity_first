@@ -74,6 +74,7 @@
     <Content Include="App_Data\SMDB_log.ldf">
       <DependentUpon>SMDB.mdf</DependentUpon>
     </Content>
+    <Content Include="CheckCode.aspx" />
     <Content Include="css\login.css" />
     <Content Include="css\master.css" />
     <Content Include="css\nav.css" />
@@ -162,6 +163,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BBS.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="CheckCode.aspx.cs">
+      <DependentUpon>CheckCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckCode.aspx.designer.cs">
+      <DependentUpon>CheckCode.aspx</DependentUpon>
     </Compile>
     <Compile Include="EditGood.aspx.cs">
       <DependentUpon>EditGood.aspx</DependentUpon>

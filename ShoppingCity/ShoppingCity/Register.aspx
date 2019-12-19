@@ -79,8 +79,13 @@
                 <td>手&nbsp; 机：<asp:TextBox ID="txtuPhone" runat="server" TextMode="Phone"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtuPhone" ErrorMessage="*" ForeColor="#FF3300"></asp:RequiredFieldValidator>
                     <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtuPhone" Display="Dynamic" ErrorMessage="请输入正确的手机号码" ForeColor="Red" ValidationExpression="(\(\d{3}\)|\d{3})?\d{8}"></asp:RegularExpressionValidator>
+                    <br />
+                    验证码： 
+                    <asp:TextBox ID="txtCheckCode" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="txtCheckCode" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
+                    <asp:Image ID="Image1" runat="server" ImageUrl="~/CheckCode.aspx" Width="50px" Height="40px"/>
                 </td>
-            </tr>
+            </tr> 
             <%--<tr>
                 <td>头像：<asp:DropDownList ID="ddluImage" runat="server" OnSelectedIndexChanged="ddluImage_SelectedIndexChanged" AutoPostBack="True">
                     <asp:ListItem>1.gif</asp:ListItem>
