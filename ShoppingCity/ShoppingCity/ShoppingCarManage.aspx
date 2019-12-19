@@ -32,7 +32,7 @@
                     <asp:TemplateField HeaderText="宝贝">
                         <ItemTemplate>   
                             <a href='<%# Eval("gdID","GoodsDetails.aspx?gdid={0}") %>'>
-                                <asp:Image ID="img1" runat="server" CssClass="noborder"  ImageUrl='<%# Eval("gdImage","images/goods/l{0}") %>'/>
+                                <asp:Image ID="img1" runat="server" CssClass="noborder"  ImageUrl='<%# Eval("gdImage","images/goods/{0}") %>'/>
                             </a>
                         </ItemTemplate>
                         <FooterTemplate>
@@ -80,7 +80,7 @@
                         </ItemTemplate>
                         <FooterTemplate>
                             <a href="Order.aspx">
-                                <asp:ImageButton ID="imageComp" runat="server" CssClass="noborder" ImageUrl="images/send.png" AlternateText="结算" />
+                                <asp:ImageButton ID="imageComp" runat="server" CssClass="noborder" ImageUrl="images/send.png" AlternateText="结算" PostBackUrl="~/success.aspx" />
                             </a>
                         </FooterTemplate>
                         <ItemStyle CssClass="center" />

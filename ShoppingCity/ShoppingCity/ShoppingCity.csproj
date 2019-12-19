@@ -134,6 +134,7 @@
     <Content Include="images\normal3.jpg" />
     <Content Include="images\normal4.jpg" />
     <Content Include="images\send.png" />
+    <Content Include="images\success.png" />
     <Content Include="js\index.js" />
     <Content Include="js\jquery-3.4.1.min.js" />
     <Content Include="js\nav.js" />
@@ -143,6 +144,7 @@
     <Content Include="MessageReply.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="ShoppingCarManage.aspx" />
+    <Content Include="success.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -247,6 +249,13 @@
     </Compile>
     <Compile Include="ShoppingCity.Master.designer.cs">
       <DependentUpon>ShoppingCity.Master</DependentUpon>
+    </Compile>
+    <Compile Include="success.aspx.cs">
+      <DependentUpon>success.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="success.aspx.designer.cs">
+      <DependentUpon>success.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
