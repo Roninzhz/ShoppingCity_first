@@ -10,7 +10,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="LinqDataSource1" DataKeyNames="geID">
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="LinqDataSource1" DataKeyNames="gdID">
                 <Columns>
                     <asp:BoundField DataField="geID" HeaderText="geID" InsertVisible="False" ReadOnly="True" SortExpression="geID" />
                     <asp:BoundField DataField="uID" HeaderText="uID" SortExpression="uID" />
@@ -19,10 +19,10 @@
                     <asp:BoundField DataField="geAddTime" HeaderText="geAddTime" SortExpression="geAddTime" />
                 </Columns>
             </asp:GridView>
-            <asp:LinqDataSource ID="LinqDataSource1" runat="server" ContextTypeName="ShoppingCity.pingjiaDataContext" TableName="GoodEvaluate" Where="gdID == @gdID &amp;&amp; gdID == @gdID1" EntityTypeName="">
+            <asp:LinqDataSource ID="LinqDataSource1" runat="server" ContextTypeName="ShoppingCity.pingjiaDataContext" TableName="GoodEvaluate" Where="gdID == @gdID" EntityTypeName="">
                 <WhereParameters>
                     <asp:QueryStringParameter Name="gdID" QueryStringField="gdid" Type="Int32" />
-                    <asp:QueryStringParameter Name="gdID1" QueryStringField="id" Type="Int32" />
+                    <%--<asp:QueryStringParameter Name="gdID1" QueryStringField="id" Type="Int32" />--%>
                 </WhereParameters>
             </asp:LinqDataSource>
         </div>
