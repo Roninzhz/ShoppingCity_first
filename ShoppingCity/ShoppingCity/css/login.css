@@ -8,24 +8,23 @@
 
 body {
     min-height: 100vh;
-    background-image: url('../images/login_back1.jpg');
-    /*background-image: linear-gradient(120deg,#3498db,#8e44ad);*/
-    /*background-image: url('../images/login_back.jpg');*/
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-size: cover;
     background-position: center 0;
 }
 
 .login-form {
-    width: 360px;
+    width: 290px;
     background: #f1f1f1;
-    height: 600px;
+    height: 410px;
     padding: 80px 40px;
     border-radius: 10px;
     position: absolute;
-    left: 50%;
-    top: 50%;
+    left: 37%;
+    top: 38%;
     transform: translate(-50%,-50%);
+    background-image: linear-gradient(120deg,#FFECEC,#FF2D2D);
+    background-position: center center;
 }
 
     .login-form h1 {

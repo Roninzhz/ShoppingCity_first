@@ -79,7 +79,6 @@
     <Content Include="css\master.css" />
     <Content Include="css\nav.css" />
     <Content Include="css\picstyle.css" />
-    <Content Include="css\search.css" />
     <Content Include="EditGood.aspx" />
     <Content Include="GoodsInfo.aspx" />
     <Content Include="GoodsList.aspx" />
@@ -141,7 +140,6 @@
     <Content Include="js\index.js" />
     <Content Include="js\jquery-3.4.1.min.js" />
     <Content Include="js\nav.js" />
-    <Content Include="js\zySearch.js" />
     <Content Include="Login.aspx" />
     <Content Include="MessageManage.aspx" />
     <Content Include="MessageReply.aspx" />

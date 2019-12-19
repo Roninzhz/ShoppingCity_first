@@ -15,13 +15,13 @@ namespace ShoppingCity
     {
 
         /// <summary>
-        /// form1 控件。
+        /// form 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form;
 
         /// <summary>
         /// txtuName 控件。
@@ -33,13 +33,13 @@ namespace ShoppingCity
         protected global::System.Web.UI.WebControls.TextBox txtuName;
 
         /// <summary>
-        /// RequiredFieldValidator3 控件。
+        /// Reusername 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator Reusername;
 
         /// <summary>
         /// txtuPwd 控件。
@@ -51,121 +51,40 @@ namespace ShoppingCity
         protected global::System.Web.UI.WebControls.TextBox txtuPwd;
 
         /// <summary>
-        /// RequiredFieldValidator4 控件。
+        /// Repassword 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator4;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator Repassword;
 
         /// <summary>
-        /// txtuPwd0 控件。
+        /// txtuPwd1 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtuPwd0;
+        protected global::System.Web.UI.WebControls.TextBox txtuPwd1;
 
         /// <summary>
-        /// RequiredFieldValidator6 控件。
+        /// Repassword1 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator6;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator Repassword1;
 
         /// <summary>
-        /// CompareValidator1 控件。
+        /// Com 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator CompareValidator1;
-
-        /// <summary>
-        /// txtuRealName 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtuRealName;
-
-        /// <summary>
-        /// RequiredFieldValidator5 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator5;
-
-        /// <summary>
-        /// rbluSex 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList rbluSex;
-
-        /// <summary>
-        /// txtuAge 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtuAge;
-
-        /// <summary>
-        /// RequiredFieldValidator2 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
-
-        /// <summary>
-        /// RegularExpressionValidator3 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator3;
-
-        /// <summary>
-        /// txtuEmail 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtuEmail;
-
-        /// <summary>
-        /// reqtxtuEmail 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator reqtxtuEmail;
-
-        /// <summary>
-        /// RegularExpressionValidator2 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator2;
+        protected global::System.Web.UI.WebControls.CompareValidator Com;
 
         /// <summary>
         /// txtuPhone 控件。
@@ -177,22 +96,22 @@ namespace ShoppingCity
         protected global::System.Web.UI.WebControls.TextBox txtuPhone;
 
         /// <summary>
-        /// RequiredFieldValidator1 控件。
+        /// Rephone 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator Rephone;
 
         /// <summary>
-        /// RegularExpressionValidator1 控件。
+        /// Regphone1 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator Regphone1;
 
         /// <summary>
         /// txtCheckCode 控件。
@@ -204,30 +123,30 @@ namespace ShoppingCity
         protected global::System.Web.UI.WebControls.TextBox txtCheckCode;
 
         /// <summary>
-        /// RequiredFieldValidator7 控件。
+        /// Image 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator7;
+        protected global::System.Web.UI.WebControls.Image Image;
 
         /// <summary>
-        /// Image1 控件。
+        /// Rechekcode 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator Rechekcode;
 
         /// <summary>
-        /// btnAdd 控件。
+        /// submit 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAdd;
+        protected global::System.Web.UI.WebControls.Button submit;
     }
 }

@@ -1,12 +1,10 @@
 ﻿<%@ Page Title="Hi Go购物车管理" Language="C#" MasterPageFile="~/ShoppingCity.Master" AutoEventWireup="true" CodeBehind="ShoppingCarManage.aspx.cs" Inherits="ShoppingCity.ShoppingCarManage" %>
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div>
         <br />
         【购物车】<asp:Literal ID="ltCurUser" runat="server"></asp:Literal>
-        <%-- 增加了修改数量的图标 --%>
             ----------------------------------------------------------------------------------------------
             <asp:SqlDataSource ProviderName="System.Data.SqlClient" ID="sqlGoods" runat="server" ConnectionString="<%$ ConnectionStrings:SMDB %>" DeleteCommand="upDelScarInfoBySciID" DeleteCommandType="StoredProcedure" SelectCommand="upGetInfoByScid" SelectCommandType="StoredProcedure" UpdateCommand="upUpdateNumBySciID" UpdateCommandType="StoredProcedure">
                 <SelectParameters>

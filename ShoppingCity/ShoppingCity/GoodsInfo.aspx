@@ -8,7 +8,7 @@
             <td colspan="2" style="height: 22px">
                 <asp:Image ID="ImgGood" runat="server" />
             </td>
-            <td style="height: 22px">
+            <td style="height: 22px">货物号:
                 <asp:Label ID="lblID" runat="server"></asp:Label>
             </td>
         </tr>
@@ -32,7 +32,7 @@
         </tr>
         <tr>
             <td colspan="2">
-                <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/images/icon/addCar.jpg" OnClick="ImageButton1_Click" />
+                <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="images/send.png" OnClick="ImageButton1_Click" />
             </td>
             <td>&nbsp;</td>
         </tr>

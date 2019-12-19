@@ -10,6 +10,12 @@
     <link rel="Bookmark" href="ico/Hi_Go.ico" />
     <script src="js/jquery-3.4.1.min.js"></script>
     <link href="css/login.css" rel="stylesheet" />
+    <style>
+        .auto-style {
+            width: 1254px;
+            height: 337px;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server" class="login-form">
@@ -42,5 +48,16 @@
             });
         </script>
     </form>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+        <img alt="" src="images/login_back.jpg" style="background-position: center" class="auto-style"/></p>
 </body>
 </html>

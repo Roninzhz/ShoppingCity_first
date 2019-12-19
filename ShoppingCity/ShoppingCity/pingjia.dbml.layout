@@ -2,10 +2,10 @@
 <ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="pingjia">
   <DataContextMoniker Name="/pingjiaDataContext" />
   <nestedChildShapes>
-    <classShape Id="116139ca-8771-480d-b22a-ee3d1258d907" absoluteBounds="3, 1.875, 2, 1.7220992024739581">
+    <classShape Id="8c89a5f3-8665-4112-8ddb-ca7264020921" absoluteBounds="3.75, 2.75, 2, 1.7220992024739581">
       <DataClassMoniker Name="/pingjiaDataContext/GoodEvaluate" />
       <nestedChildShapes>
-        <elementListCompartment Id="ef6b233a-ca3d-4195-bfe5-219a24afeed1" absoluteBounds="3.0149999999999997, 2.335, 1.9700000000000002, 1.1620992024739583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="5dcbd7aa-9e9c-455e-ab40-4064c8925434" absoluteBounds="3.765, 3.21, 1.9700000000000002, 1.1620992024739583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>

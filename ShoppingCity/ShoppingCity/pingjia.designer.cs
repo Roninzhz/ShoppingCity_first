@@ -171,7 +171,7 @@ namespace ShoppingCity
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_geContent", DbType="Text NOT NULL", CanBeNull=false, UpdateCheck=UpdateCheck.Never)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_geContent", DbType="VarChar(MAX) NOT NULL", CanBeNull=false)]
 		public string geContent
 		{
 			get

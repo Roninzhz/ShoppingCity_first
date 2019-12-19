@@ -35,7 +35,7 @@ namespace ShoppingCity
             PagedDataSource pds = new PagedDataSource();
             pds.DataSource = sqlGoods.Select(DataSourceSelectArguments.Empty);
             pds.AllowPaging = true;
-            pds.PageSize = 3;
+            pds.PageSize = 6;
             if (PageNumber > pds.PageCount)
             {
                 PageNumber = 1;
@@ -106,8 +106,8 @@ namespace ShoppingCity
         }
         protected void ddlGType_DataBound(object sender, EventArgs e)
         {
-            //ListItem item = new ListItem("所有类别", "0");
-            //ddlGType.Items.Insert(0, item);
+            ListItem item = new ListItem("所有类别", "0");
+            ddlGType.Items.Insert(0, item);
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -126,34 +126,34 @@ namespace ShoppingCity
             DataList1.DataSourceID = null;
             string sqlstr = sqlGoods0.SelectCommand;
 
-            //switch (rdltSaleQty.SelectedIndex)
-            //{
-            //    case 0: sqlstr += " where gdSaleQty>=0"; break;
-            //    case 1: sqlstr += " where gdSaleQty<20"; break;
-            //    case 2: sqlstr += " where gdSaleQty between 20 and 49"; break;
-            //    case 3: sqlstr += " where gdSaleQty>50"; break;
-            //}
+            switch (rdltSaleQty.SelectedIndex)
+            {
+                case 0: sqlstr += " where gdSaleQty>=0"; break;
+                case 1: sqlstr += " where gdSaleQty<20"; break;
+                case 2: sqlstr += " where gdSaleQty between 20 and 49"; break;
+                case 3: sqlstr += " where gdSaleQty>50"; break;
+            }
             if (txtGName.Text != "")
             {
                 sqlstr += " and gdName like '%'+@dgname+'%'";
                 Parameter pm = new Parameter("dgname", DbType.String, txtGName.Text);
                 sqlGoods0.SelectParameters.Add(pm);
             }
-            //if (ddlGType.SelectedValue != "0")
-            //{
-            //    sqlstr += " and Goods.tID=@tID";
-            //    Parameter pm = new Parameter("tID", DbType.Int16, ddlGType.SelectedValue);
-            //    sqlGoods0.SelectParameters.Add(pm);
+            if (ddlGType.SelectedValue != "0")
+            {
+                sqlstr += " and Goods.tID=@tID";
+                Parameter pm = new Parameter("tID", DbType.Int16, ddlGType.SelectedValue);
+                sqlGoods0.SelectParameters.Add(pm);
 
-            //}
-            //if (txtPriceLow.Text != "" || txtPriceLow.Text != "")
-            //{
-            //    sqlstr += " and gdPrice>=@low and gdPrice<@high";
-            //    Parameter pm = new Parameter("low", DbType.Int16, txtPriceLow.Text);
-            //    sqlGoods0.SelectParameters.Add(pm);
-            //    pm = new Parameter("high", DbType.Int16, txtPriceHigh.Text);
-            //    sqlGoods0.SelectParameters.Add(pm);
-            //}
+            }
+            if (txtPriceLow.Text != "" || txtPriceLow.Text != "")
+            {
+                sqlstr += " and gdPrice>=@low and gdPrice<@high";
+                Parameter pm = new Parameter("low", DbType.Int16, txtPriceLow.Text);
+                sqlGoods0.SelectParameters.Add(pm);
+                pm = new Parameter("high", DbType.Int16, txtPriceHigh.Text);
+                sqlGoods0.SelectParameters.Add(pm);
+            }
             sqlGoods0.SelectCommand = sqlstr;
             DataList1.DataSourceID = "sqlGoods0";
             DataList1.Visible = true;

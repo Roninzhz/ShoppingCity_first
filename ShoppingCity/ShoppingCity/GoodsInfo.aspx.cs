@@ -9,6 +9,10 @@ namespace ShoppingCity
         int id = 0;
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["uName"] == null)
+            {
+                ClientScript.RegisterStartupScript(GetType(), "", "<script>alert('请先登录');location.href='Login.aspx';</script>");
+            }
             if (Request["gdID"] != null)
             {
                 id = int.Parse(Request["gdID"].ToString());

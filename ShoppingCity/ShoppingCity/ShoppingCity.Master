@@ -10,7 +10,7 @@
     <link rel="Bookmark" href="ico/Hi_Go.ico" />
     <link href="css/master.css" rel="stylesheet" />
     <script src="js/jquery-3.4.1.min.js"></script>
-    <%--<script src="js/index.js"></script>--%>
+<%--    <script src="js/index.js"></script>--%>
     <script src="js/nav.js"></script>
     <link href="css/nav.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
@@ -28,20 +28,23 @@
         </div>
         <div class="menu">
             <div class="menu-item current-menu-item">
-                <h6>Home</h6>
+                <h6>Hi Go</h6>
                 <div class="wee"></div>
             </div>
             <div class="menu-item">
-                <h6>Contact</h6>
+                <a href="GoodsList.aspx"><h6>首页</h6></a>
             </div>
             <div class="menu-item">
-                <h6>About</h6>
+                <a href="Login.aspx"><h6>登录</h6></a>
             </div>
             <div class="menu-item">
-                <h6>Blog</h6>
+                <a href="MessageManage.aspx"><h6>留言反馈</h6></a>
             </div>
             <div class="menu-item">
-                <h6>Jobs</h6>
+               <a href="ShoppingCarManage.aspx"> <h6>购物车</h6></a>
+            </div>
+             <div class="menu-item">
+               <a href="Login.aspx"> <h6>退出登录</h6></a>
             </div>
         </div>
         <div>

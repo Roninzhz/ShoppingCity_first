@@ -2,8 +2,8 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/index.js"></script>
     <link href="css/picstyle.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/search.css" type="text/css" />
     <style type="text/css">
         .tb {
             width: 200px;
@@ -32,20 +32,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="zySearch" id="zySearch"></div>
-    <script type="text/javascript" src="js/zySearch.js"></script>
-    <script type="text/javascript">
-        $("#zySearch").zySearch({
-            "width": "500",
-            "height": "33",
-            "parentClass": "pageTitle",
-            "callback": function (keyword) {
-                console.info("搜索的关键字");
-                console.info(keyword);
-            }
-        });
-    </script>
-<%--    <p id="loading">loading...</p>
+    <p id="loading">loading...</p>
     <div id="images">
         <div class="lighten">
             <img src="images/lighten1.jpg" alt="" />
@@ -65,37 +52,29 @@
                 <li class="next"></li>
             </ul>
         </nav>
-    </div>--%>
+    </div>
     <div>
-        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="留言" />
-        <asp:Button ID="btnChu" runat="server" OnClick="btnChu_Click" Text="登出" Width="45px" />
+
         <br />
-        【商品展示】<asp:Literal ID="ltCurUser" runat="server"></asp:Literal>
+        <asp:Literal ID="ltCurUser" runat="server"></asp:Literal>
         <br />
         搜索条件：<br />
         ----------------------------------------------------------------------------------------------------------------------<br />
         关键字：<asp:TextBox ID="txtGName" runat="server"></asp:TextBox>
-        <%--<br />--%>
-        <%--<br />
         类别：<asp:DropDownList ID="ddlGType" runat="server" DataSourceID="sqlGType" DataTextField="tName" DataValueField="tID" OnDataBound="ddlGType_DataBound">
         </asp:DropDownList>
-        <br />
-        <br />
         价格区间：<asp:TextBox ID="txtPriceLow" runat="server" Width="56px"></asp:TextBox>
         -<asp:TextBox ID="txtPriceHigh" runat="server" Width="56px"></asp:TextBox>
-        <br />--%>
-       <%-- <br />--%>
-       <%-- 销售量： 
+        <br />
+        ： 
             <asp:RadioButtonList ID="rdltSaleQty" runat="server" AutoPostBack="True" RepeatDirection="Horizontal">
                 <asp:ListItem>显示全部</asp:ListItem>
                 <asp:ListItem Value="19">20以下</asp:ListItem>
                 <asp:ListItem Value="49">20-49</asp:ListItem>
                 <asp:ListItem Value="50">50件以上</asp:ListItem>
             </asp:RadioButtonList>
-        <br />--%>
-        <%--<br />--%>
         <asp:Button ID="btnFind" runat="server" Text="搜索" OnClick="btnFind_Click1" />
-        <asp:DataList ID="DataList1" runat="server" RepeatColumns="3" DataSourceID="sqlGoods" DataKeyField="gdID" OnItemCommand="dlstGoods_ItemCommand" Visible="False" Width="594px">
+        <asp:DataList ID="DataList1" runat="server" RepeatColumns="4" DataSourceID="sqlGoods" DataKeyField="gdID" OnItemCommand="dlstGoods_ItemCommand" Visible="False" Width="1239px" Height="849px">
             <ItemTemplate>
                 <table class="tb">
                     <tr>
@@ -132,7 +111,7 @@
         </asp:DataList>
         <br />
         ----------------------------------------------------------------------------------
-         <asp:DataList ID="dlstGoods" runat="server" RepeatColumns="3" DataSourceID="sqlGood0" DataKeyField="gdID" OnItemCommand="dlstGoods_ItemCommand">
+         <asp:DataList ID="dlstGoods" runat="server" RepeatColumns="3" DataSourceID="sqlGood0" DataKeyField="gdID" OnItemCommand="dlstGoods_ItemCommand" Width="1239px" Height="849px">
              <ItemTemplate>
                  <table class="tb">
                      <tr>
@@ -166,9 +145,6 @@
                      </td>
                  </table>
              </ItemTemplate>
-             <FooterTemplate>
-                 <a href="ShoppingCarManage.aspx">购物车</a>
-             </FooterTemplate>
          </asp:DataList>
         <asp:SqlDataSource ID="sqlGoods" runat="server" ConnectionString="<%$ ConnectionStrings:SMDB%>" ProviderName="System.Data.SqlClient" SelectCommand="select * from [Goods]" />
         <asp:SqlDataSource ID="sqlGType" runat="server" ConnectionString="<%$ ConnectionStrings:SMDB%>" SelectCommand="SELECT * FROM [GoodsType]"></asp:SqlDataSource>
