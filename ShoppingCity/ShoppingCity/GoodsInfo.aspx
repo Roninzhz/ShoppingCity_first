@@ -47,9 +47,9 @@
                 </WhereParameters>
             </asp:LinqDataSource>
                 <br />
-                <%--<asp:TextBox ID="txtbnContent" runat="server" Height="85px" TextMode="MultiLine" Width="460px"></asp:TextBox>
+                <asp:TextBox ID="txtbnContent" runat="server" Height="85px" TextMode="MultiLine" Width="460px"></asp:TextBox>
             <asp:Button ID="btnSave" runat="server" OnClick="btnSave_Click" Text="评价" />
-        </div></td>--%>
+        </div></td>
         </tr>
     </table>
 </asp:Content>

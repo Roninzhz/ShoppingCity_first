@@ -92,12 +92,13 @@ namespace ShoppingCity
             {
                 pingjiaDataContext pi = new pingjiaDataContext();
                 GoodEvaluate goodE = new GoodEvaluate();
-                goodE.gdID = 
+                goodE.gdID = Convert.ToInt32(lblID.Text);
+                goodE.uID = Convert.ToInt32(Session["uID"]);
                 goodE.geContent = txtbnContent.Text.Trim();
                 goodE.geAddTime = System.DateTime.Now;
                 pi.GoodEvaluate.InsertOnSubmit(goodE);
                 pi.SubmitChanges();
-                Response.Redirect("GoodsInfo.aspx");
+                Response.Redirect("GoodsInfo.aspx?gdid=" + Request["gdid"]);
             }
         }
     }
