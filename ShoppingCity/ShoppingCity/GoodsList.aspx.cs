@@ -104,7 +104,23 @@ namespace ShoppingCity
                 ClientScript.RegisterStartupScript(GetType(), "", "<script>alert('请先登录');location.href='Login.aspx';</script>");
             }
         }
-        protected void btnFind_Click(object sender, EventArgs e)
+        protected void ddlGType_DataBound(object sender, EventArgs e)
+        {
+            ListItem item = new ListItem("所有类别", "0");
+            ddlGType.Items.Insert(0, item);
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("MessageManage.aspx");
+        }
+
+        protected void btnChu_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Login.aspx");
+        }
+
+        protected void btnFind_Click1(object sender, EventArgs e)
         {
             sqlGoods0.SelectParameters.Clear();
             DataList1.DataSourceID = null;
@@ -142,22 +158,6 @@ namespace ShoppingCity
             sqlGoods0.SelectCommand = sqlstr;
             DataList1.DataSourceID = "sqlGoods0";
             DataList1.Visible = true;
-        }
-
-        protected void ddlGType_DataBound(object sender, EventArgs e)
-        {
-            ListItem item = new ListItem("所有类别", "0");
-            ddlGType.Items.Insert(0, item);
-        }
-
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("MessageManage.aspx");
-        }
-
-        protected void btnChu_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Login.aspx");
         }
     }
 }

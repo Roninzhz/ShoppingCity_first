@@ -15,9 +15,17 @@
     <link href="css/nav.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            height: 110px;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
+        <div>
+            <img src="images/bananer.png" class="auto-style1" width:100%; width="100%"/>
+        </div>
         <div class="menu">
             <div class="menu-item current-menu-item">
                 <h6>Home</h6>
