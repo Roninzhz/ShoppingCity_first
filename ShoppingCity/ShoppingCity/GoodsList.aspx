@@ -23,7 +23,7 @@
             </asp:RadioButtonList>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Button ID="btnFind" runat="server" Text="搜索" OnClick="btnFind_Click1" Height="30px" Width="100px" />
-        <asp:DataList ID="DataList1" runat="server" RepeatColumns="4" DataSourceID="sqlGoods" DataKeyField="gdID" OnItemCommand="dlstGoods_ItemCommand" Visible="False" Width="1239px" Height="849px">
+        <asp:DataList ID="DataList1" runat="server" RepeatColumns="3" DataSourceID="sqlGoods" DataKeyField="gdID" OnItemCommand="dlstGoods_ItemCommand" Visible="False">
             <ItemTemplate>
                 <table class="tb">
                     <tr>
@@ -59,7 +59,7 @@
         </asp:DataList>
         <br />
         ----------------------------------------------------------------------------------
-         <asp:DataList ID="dlstGoods" runat="server" RepeatColumns="3" DataSourceID="sqlGood0" DataKeyField="gdID" OnItemCommand="dlstGoods_ItemCommand" Width="1239px" Height="849px">
+         <asp:DataList ID="dlstGoods" runat="server" RepeatColumns="3" DataSourceID="sqlGood0" DataKeyField="gdID" OnItemCommand="dlstGoods_ItemCommand">
              <ItemTemplate>
                  <table class="tb">
                      <tr>

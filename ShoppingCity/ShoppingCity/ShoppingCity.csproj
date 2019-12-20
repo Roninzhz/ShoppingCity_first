@@ -215,11 +215,6 @@
     <Compile Include="CheckCode.aspx.designer.cs">
       <DependentUpon>CheckCode.aspx</DependentUpon>
     </Compile>
-    <Compile Include="clear.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>clear.dbml</DependentUpon>
-    </Compile>
     <Compile Include="EditGood.aspx.cs">
       <DependentUpon>EditGood.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -330,14 +325,6 @@
       <LastGenOutput>GoodType.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="clear.dbml">
-      <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>clear.designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </Content>
-    <None Include="clear.dbml.layout">
-      <DependentUpon>clear.dbml</DependentUpon>
-    </None>
     <None Include="GoodType.dbml.layout">
       <DependentUpon>GoodType.dbml</DependentUpon>
     </None>

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
@@ -145,7 +144,7 @@ namespace ShoppingCity
             //    CheckBox ckb = (CheckBox)this.grdGoods.Rows[i].Cells[0].FindControl("chkSelect");
             //    if (ckb.Checked == true)
             //    {
-                    
+
             //    }
             //}
         }

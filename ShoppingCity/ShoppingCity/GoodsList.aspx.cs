@@ -35,7 +35,7 @@ namespace ShoppingCity
             PagedDataSource pds = new PagedDataSource();
             pds.DataSource = sqlGoods.Select(DataSourceSelectArguments.Empty);
             pds.AllowPaging = true;
-            pds.PageSize = 6;
+            pds.PageSize = 3;
             if (PageNumber > pds.PageCount)
             {
                 PageNumber = 1;

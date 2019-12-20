@@ -13,9 +13,11 @@
     <br />
     <asp:Button ID="btnAdd" runat="server" OnClick="btnAdd_Click" Text="确认插入" />
     <br />
-    填写要更新的数据 ： <asp:TextBox ID="txtNamebe" runat="server"></asp:TextBox>
+    填写要更新的数据 ：
+    <asp:TextBox ID="txtNamebe" runat="server"></asp:TextBox>
     <br />
-    更 新 后 的 数 据： <asp:TextBox ID="txtNameaf" runat="server"></asp:TextBox>
+    更 新 后 的 数 据：
+    <asp:TextBox ID="txtNameaf" runat="server"></asp:TextBox>
     <br />
     <br />
     <asp:Button ID="btnUpdate" runat="server" OnClick="btnUpdate_Click" Text="确认更新" />

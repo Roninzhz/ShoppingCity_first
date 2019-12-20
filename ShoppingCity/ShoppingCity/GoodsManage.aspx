@@ -4,8 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div>
-        <%--添加了修改和删除的图标--%>
-            【商品管理】<br />
+        【商品管理】<br />
         ----------------------------------------------------------------------------------------------------------------------<br />
         <asp:Button ID="btnAdd" runat="server" Text="添加商品" OnClick="btnAdd_Click" />
         <asp:Button ID="btnEdit" runat="server" Text="修改商品类型" OnClick="btnEdit_Click" />
