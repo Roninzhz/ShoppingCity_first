@@ -90,5 +90,6 @@
                 <span style="font-size: 1.2pt;">购物车内没有任何物品</span>
             </EmptyDataTemplate>
         </asp:GridView>
+        <asp:ImageButton ID="imageComp" runat="server" CssClass="noborder" ImageUrl="images/send.png" AlternateText="结算" OnClick="imageComp_Click"/>
     </div>
 </asp:Content>
