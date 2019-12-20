@@ -15,7 +15,7 @@
                 </UpdateParameters>
             </asp:SqlDataSource>
         <br />
-        <asp:GridView ID="grdGoods" runat="server" AutoGenerateColumns="False" BorderStyle="None" DataSourceID="sqlGoods" EnableModelValidation="True" GridLines="None" PageSize="3" ShowFooter="True" OnRowDataBound="grdGoods_RowDataBound" OnSelectedIndexChanged="grdGoods_SelectedIndexChanged" Height="166px" DataKeyNames="sciID">
+        <asp:GridView ID="grdGoods" runat="server" AutoGenerateColumns="False" BorderStyle="None" DataSourceID="sqlGoods" EnableModelValidation="True" GridLines="None" PageSize="3" ShowFooter="True" OnRowDataBound="grdGoods_RowDataBound" OnSelectedIndexChanged="grdGoods_SelectedIndexChanged" Height="100px" DataKeyNames="sciID">
             <HeaderStyle CssClass="hstyle" />
             <FooterStyle CssClass="fstyle" />
             <Columns>
@@ -30,7 +30,7 @@
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="宝贝">
                     <ItemTemplate>
-                        <a href='<%# Eval("gdID","GoodsDetails.aspx?gdid={0}") %>'>
+                        <a href='<%# Eval("gdID","Goodsinfo.aspx?gdid={0}") %>'>
                             <asp:Image ID="img1" runat="server" CssClass="noborder" ImageUrl='<%# Eval("gdImage","images/goods/{0}") %>' />
                         </a>
                     </ItemTemplate>
@@ -41,7 +41,7 @@
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="名称">
                     <ItemTemplate>
-                        <asp:HyperLink ID="hlkName" runat="server" NavigateUrl='<%# Eval("gdID","GoodsDetails.aspx?gdid={0}") %>' Text='<%# Eval("gdName") %>' />
+                        <asp:HyperLink ID="hlkName" runat="server" NavigateUrl='<%# Eval("gdID","Goodsinfo?gdid={0}") %>' Text='<%# Eval("gdName") %>' />
                     </ItemTemplate>
                     <FooterTemplate>
                         <asp:LinkButton ID="lbtnClear" runat="server" Text="清空购物车" OnClick="lbtClear_Click"></asp:LinkButton>
