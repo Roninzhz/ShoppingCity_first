@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
@@ -132,6 +133,21 @@ namespace ShoppingCity
                     lt.Text = "全选";
                 }
             }
+        }
+
+        protected void imageComp_Click(object sender, System.Web.UI.ImageClickEventArgs e)
+        {
+            //clearDataContext lq = new clearDataContext();
+            //var types = from gt in lq.SCarInfo
+            //            select gt;
+            //for (int i = 0; i < this.grdGoods.Rows.Count; i++)
+            //{
+            //    CheckBox ckb = (CheckBox)this.grdGoods.Rows[i].Cells[0].FindControl("chkSelect");
+            //    if (ckb.Checked == true)
+            //    {
+                    
+            //    }
+            //}
         }
     }
 }
