@@ -78,7 +78,7 @@
                         <asp:LinkButton ID="lbtnDel" runat="server" CausesValidation="false" CommandName="Delete" Text="删除" OnClientClick="return confirm('确定从该购物车中删除该商品');" />
                     </ItemTemplate>
                     <FooterTemplate>
-                        <a href="Order.aspx">
+                        <a href="#">
                             <asp:ImageButton ID="imageComp" runat="server" CssClass="noborder" ImageUrl="images/send.png" AlternateText="结算" PostBackUrl="~/success.aspx"/>
                         </a>
                     </FooterTemplate> 
