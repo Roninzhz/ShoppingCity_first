@@ -7,7 +7,8 @@
         <asp:Repeater ID="repBBSNote" runat="server" DataSourceID="linqNote">
             <ItemTemplate>
                 <p style="text-align: left; font-size: 14px">
-                    <asp:Label ID="Label5" runat="server" Text='<%# Eval("bnSubject") %>' /></p>
+                    <asp:Label ID="Label5" runat="server" Text='<%# Eval("bnSubject") %>' />
+                </p>
                 <table class="ba_table">
                     <tr>
                         <td>

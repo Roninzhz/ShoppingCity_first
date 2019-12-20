@@ -70,10 +70,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AddGood.aspx" />
-    <Content Include="App_Data\SMDB.mdf" />
-    <Content Include="App_Data\SMDB_log.ldf">
-      <DependentUpon>SMDB.mdf</DependentUpon>
-    </Content>
     <Content Include="CheckCode.aspx" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\login.css" />
@@ -345,7 +341,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>

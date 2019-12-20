@@ -12,23 +12,22 @@
             <HeaderTemplate>
                 <table class="table">
                     <tr>
-                        <th style="width: 45%">标题</th>
-                        <th style="width: 15%">发表人</th>
+                        <th>标题</th>
+                        <th>发表人</th>
                         <th>发表时间</th>
-                        <th></th>
                     </tr>
                 </table>
             </HeaderTemplate>
             <AlternatingItemTemplate>
                 <tr class="title">
                     <td>
-                        <asp:Label ID="lblSubject" runat="server" Text='<%# Eval("bnSubject") %>' />
+                        <asp:Label ID="lblSubject" runat="server" Text='<%# Eval("bnSubject") %>' Width="100px"/>
                     </td>
                     <td>
-                        <asp:Label ID="Label3" runat="server" Text='<%# Eval("Users.uName") %>' />
+                        <asp:Label ID="Label3" runat="server" Text='<%# Eval("Users.uName") %>'/>
                     </td>
                     <td>
-                        <asp:Label ID="Label4" runat="server" Text='<%# Eval("bnAddTime") %>' />
+                        <asp:Label ID="Label4" runat="server" Text='<%# Eval("bnAddTime") %>'/>
                     </td>
                     <td><a href='MessageReply.aspx?id=<%# Eval("bnID") %>'>查看</a></td>
                     <br />
