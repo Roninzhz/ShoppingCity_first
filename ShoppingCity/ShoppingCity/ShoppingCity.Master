@@ -10,7 +10,6 @@
     <link rel="Bookmark" href="ico/Hi_Go.ico" />
     <link href="css/master.css" rel="stylesheet" />
     <script src="js/jquery-3.4.1.min.js"></script>
-<%--    <script src="js/index.js"></script>--%>
     <script src="js/nav.js"></script>
     <link href="css/nav.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
@@ -50,6 +49,9 @@
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
+        </div>
+        <div>
+            <img />
         </div>
     </form>
 </body>
