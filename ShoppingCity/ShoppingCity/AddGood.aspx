@@ -19,7 +19,7 @@
         <br />
         价&nbsp;&nbsp; 格 ： <asp:TextBox ID="txtPrice" runat="server"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtPrice" ErrorMessage="*" ForeColor="#FF3300"></asp:RequiredFieldValidator>
-        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="txtPrice" ErrorMessage="请输入正确价格" ForeColor="#FF3300" ValidationExpression="^[0-9]*$"></asp:RegularExpressionValidator>
+        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="txtPrice" ErrorMessage="请输入正确价格" ForeColor="#FF3300" ValidationExpression="(^[1-9]\d*(\.\d{1,2})?$)|(^0(\.\d{1,2})?$)"></asp:RegularExpressionValidator>
         <br />
         入库 数量 ： <asp:TextBox ID="txtQuantity" runat="server"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtQuantity" ErrorMessage="*" ForeColor="#FF3300"></asp:RequiredFieldValidator>
@@ -29,7 +29,7 @@
         <br />
         运&nbsp;&nbsp; 费 ： <asp:TextBox ID="txtFeight" runat="server"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txtFeight" ErrorMessage="*" ForeColor="#FF3300"></asp:RequiredFieldValidator>
-        <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ControlToValidate="txtFeight" ErrorMessage="请输入正确价格" ForeColor="#FF3300" ValidationExpression="^[0-9]*$"></asp:RegularExpressionValidator>
+        <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ControlToValidate="txtFeight" ErrorMessage="请输入正确价格" ForeColor="#FF3300" ValidationExpression="(^[1-9]\d*(\.\d{1,2})?$)|(^0(\.\d{1,2})?$)"></asp:RegularExpressionValidator>
         <br />
         商品 图片 ： <asp:FileUpload ID="fldImg" runat="server" />
         <br />

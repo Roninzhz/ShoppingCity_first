@@ -81,7 +81,7 @@ namespace ShoppingCity
                 Response.ContentType = "image/Gif";
                 Response.BinaryWrite(ms.ToArray());
             }
-            catch (Exception ee)
+            catch (Exception)
             {
 
             }

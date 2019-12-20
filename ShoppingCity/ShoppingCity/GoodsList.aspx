@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="Hi Go商品列表" Language="C#" MasterPageFile="~/ShoppingCity.Master" AutoEventWireup="true" CodeBehind="GoodsList.aspx.cs" Inherits="ShoppingCity.GoodsList" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <script src="js/jquery-3.4.1.min.js"></script>
+    <%--    <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/index.js"></script>
     <link href="css/picstyle.css" rel="stylesheet" />
     <style type="text/css">
@@ -29,10 +29,10 @@
             width: 80px;
             padding: 5px;
         }
-    </style>
+    </style>--%>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <p id="loading">loading...</p>
+   <%-- <p id="loading">loading...</p>
     <div id="images">
         <div class="lighten">
             <img src="images/lighten1.jpg" alt="" />
@@ -55,7 +55,7 @@
     </div>
     <div>
 
-        <br />
+        <br />--%>
         <asp:Literal ID="ltCurUser" runat="server"></asp:Literal>
         <br />
         搜索条件：<br />
