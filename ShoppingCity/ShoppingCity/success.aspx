@@ -15,13 +15,13 @@
     
         <asp:Image ID="Image1" runat="server" Width="60px" ImageUrl="~/images/success.png" />
         &nbsp;
-        <asp:Label runat="server" Height="30px" Text="结 算 成 功 ！"></asp:Label>
+        <asp:Label runat="server" Height="30px" Text="结 算 成 功 ！！！" Font-Bold="True"></asp:Label>
         <br />
         <br />
         <br />
         <br />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Button ID="btnBuck" runat="server" Text="返回首页" PostBackUrl="~/GoodsList.aspx"/>
+        <asp:Button ID="btnBuck" runat="server" Text="返回首页" PostBackUrl="~/GoodsList.aspx" Height="30px" Width="100px"/>
     
     </div>
     </form>

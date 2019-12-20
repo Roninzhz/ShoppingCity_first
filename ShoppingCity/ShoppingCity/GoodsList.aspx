@@ -73,7 +73,8 @@
                 <asp:ListItem Value="49">20-49</asp:ListItem>
                 <asp:ListItem Value="50">50件以上</asp:ListItem>
             </asp:RadioButtonList>
-        <asp:Button ID="btnFind" runat="server" Text="搜索" OnClick="btnFind_Click1" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="btnFind" runat="server" Text="搜索" OnClick="btnFind_Click1" Height="30px" Width="100px" />
         <asp:DataList ID="DataList1" runat="server" RepeatColumns="4" DataSourceID="sqlGoods" DataKeyField="gdID" OnItemCommand="dlstGoods_ItemCommand" Visible="False" Width="1239px" Height="849px">
             <ItemTemplate>
                 <table class="tb">

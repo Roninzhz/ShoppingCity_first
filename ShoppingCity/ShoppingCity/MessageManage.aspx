@@ -47,7 +47,11 @@
             内容：<asp:TextBox ID="txtbnContent" runat="server" Height="85px" TextMode="MultiLine" Width="460px"></asp:TextBox>
             <br />
             <br />
-            <asp:Button ID="btnSave" runat="server" OnClick="btnSave_Click" Text="留言" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br />
+            <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="btnSave" runat="server" OnClick="btnSave_Click" Text="留言" Height="30px" Width="100px" />
         </div>
     </div>
 </asp:Content>
