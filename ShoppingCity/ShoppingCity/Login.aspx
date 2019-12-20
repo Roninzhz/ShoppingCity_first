@@ -58,6 +58,6 @@
         &nbsp;</p>
     <p>
         &nbsp;</p>
-        <img alt="" src="images/login_back.jpg" style="background-position: center" class="auto-style"/></p>
+        <p><img alt="" src="images/login_back.jpg" style="background-position: center" class="auto-style"/></p>
 </body>
 </html>

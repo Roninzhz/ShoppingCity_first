@@ -11,14 +11,14 @@
     <link href="css/login.css" rel="stylesheet" />
     <style type="text/css">
         .auto-style1 {
-            width: 388px;
+            width: 443px;
             background: #f1f1f1;
-            height: 778px;
+            height: 742px;
             padding: 80px 40px;
             border-radius: 10px;
             position: absolute;
             left: 38%;
-            top: 45%;
+            top: 44%;
             transform: translate(-50%,-50%);
             margin-left: 87px;
         }
@@ -26,7 +26,7 @@
 </head>
 <body>
     <form id="form" runat="server" class="auto-style1">
-        <h1>Register</h1>
+        <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Register</h1>
         <div class="txtb">
             <asp:TextBox ID="txtuName" runat="server"></asp:TextBox>
             <span data-placeholder="Username"></span>
@@ -39,7 +39,7 @@
         <asp:RequiredFieldValidator ID="Repassword" runat="server" ControlToValidate="txtuPwd" ErrorMessage="密码不能为空" ForeColor="#FF3300"></asp:RequiredFieldValidator>
         <div class="txtb">
             <asp:TextBox ID="txtuPwd1" runat="server" TextMode="Password"></asp:TextBox>
-            <span data-placeholder="Repasseord"></span>
+            <span data-placeholder="Repassword"></span>
         </div>
         <asp:RequiredFieldValidator ID="Repassword1" runat="server" ControlToValidate="txtuPwd1" ErrorMessage="确认密码不能为空" ForeColor="#FF3300"></asp:RequiredFieldValidator>
         <asp:CompareValidator ID="Com" runat="server" ControlToCompare="txtuPwd" ControlToValidate="txtuPwd1" ErrorMessage="两次密码不一致" ForeColor="#FF3300"></asp:CompareValidator>
@@ -67,5 +67,16 @@
                 $(this).removeClass("focus");
         });
     </script>
+     <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+        <p><img alt="" src="images/login_back.jpg" style="background-position: center" class="auto-style"/></p>
 </body>
 </html>

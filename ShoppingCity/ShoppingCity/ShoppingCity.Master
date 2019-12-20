@@ -5,21 +5,11 @@
 <html>
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <%--<title>Hi Go</title>--%>
+    <title>Hi Go</title>
     <link rel="Shortcut Icon" href="ico/Hi_Go.ico" />
     <link rel="Bookmark" href="ico/Hi_Go.ico" />
-    <%--<link href="css/master.css" rel="stylesheet" />
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/nav.js"></script>
-    <link href="css/nav.css" rel="stylesheet" />--%>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-    <%--<style type="text/css">
-        .auto-style1 {
-            height: 110px;
-        }
-    </style>--%>
-    <title>Home</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-1.11.0.min.js"></script>
@@ -51,10 +41,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <link href="css/memenu.css" rel="stylesheet" type="text/css" media="all" />
     <script type="text/javascript" src="js/memenu.js"></script>
     <script>$(document).ready(function () { $(".memenu").memenu(); });</script>
+    <style type="text/css">
+        .auto-style1 {
+            height: 103px;
+            width: 1295px;
+            margin-top: 0px;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
-         <%-- <div>
+        <%-- <div>
             <img src="images/bananer.png" class="auto-style1" width:100%; width="100%"/>
         </div>
         <div class="menu">
@@ -82,22 +79,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="top-header">
             <div class="container">
                 <div class="top-header-main">
-                    <div class="col-md-4 top-header-left">
-                        <div class="search-bar">
-                            <input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
-                            <input type="submit" value="">
-                        </div>
-                    </div>
                     <div class="col-md-4 top-header-middle">
-                        <a href="index.html">
-                            <img src="images/logo-4.png" alt="" /></a>
+                        <a href="GooodsList.aspx">
+                            <img src="images/bananer.png" alt="" class="auto-style1" /></a>
                     </div>
                     <div class="col-md-4 top-header-right">
                         <div class="cart box_1">
-                            <a href="checkout.html">
+                            <a href="ShoppingCarManage.aspx">
                                 <h3></h3>
                                 <div class="total">
-                                    <span class="simpleCart_total"></span>(<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)
+                                    <span class="simpleCart_total"></span>(<span id="simpleCart_quantity" class="simpleCart_quantity"></span> Car)
                                 </div>
                                 <img src="images/cart-1.png" alt="" />
                             </a>
@@ -115,234 +106,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="container">
                 <div class="top-nav">
                     <ul class="memenu skyblue">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li class="grid"><a href="#">Men</a>
-                            <div class="mepanel">
-                                <div class="row">
-                                    <div class="col1 me-one">
-                                        <h4>Shop</h4>
-                                        <ul>
-                                            <li><a href="products.html">New Arrivals</a></li>
-                                            <li><a href="products.html">Men</a></li>
-                                            <li><a href="products.html">Women</a></li>
-                                            <li><a href="products.html">Accessories</a></li>
-                                            <li><a href="products.html">Kids</a></li>
-                                            <li><a href="products.html">login</a></li>
-                                            <li><a href="products.html">Brands</a></li>
-                                            <li><a href="products.html">My Shopping Bag</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col1 me-one">
-                                        <h4>Style Zone</h4>
-                                        <ul>
-                                            <li><a href="products.html">Men</a></li>
-                                            <li><a href="products.html">Women</a></li>
-                                            <li><a href="products.html">Brands</a></li>
-                                            <li><a href="products.html">Kids</a></li>
-                                            <li><a href="products.html">Accessories</a></li>
-                                            <li><a href="products.html">Style Videos</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col1 me-one">
-                                        <h4>Popular Brands</h4>
-                                        <ul>
-                                            <li><a href="products.html">Levis</a></li>
-                                            <li><a href="products.html">Persol</a></li>
-                                            <li><a href="products.html">Nike</a></li>
-                                            <li><a href="products.html">Edwin</a></li>
-                                            <li><a href="products.html">New Balance</a></li>
-                                            <li><a href="products.html">Jack & Jones</a></li>
-                                            <li><a href="products.html">Paul Smith</a></li>
-                                            <li><a href="products.html">Ray-Ban</a></li>
-                                            <li><a href="products.html">Wood Wood</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                        <li class="active"><a href="GoodsList.aspx">首页</a></li>
+                        <li class="grid"><a href="Login.aspx">登录</a>
                         </li>
-                        <li class="grid"><a href="#">Women</a>
-                            <div class="mepanel">
-                                <div class="row">
-                                    <div class="col1 me-one">
-                                        <h4>Shop</h4>
-                                        <ul>
-                                            <li><a href="products.html">New Arrivals</a></li>
-                                            <li><a href="products.html">Men</a></li>
-                                            <li><a href="products.html">Women</a></li>
-                                            <li><a href="products.html">Accessories</a></li>
-                                            <li><a href="products.html">Kids</a></li>
-                                            <li><a href="products.html">login</a></li>
-                                            <li><a href="products.html">Brands</a></li>
-                                            <li><a href="products.html">My Shopping Bag</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col1 me-one">
-                                        <h4>Style Zone</h4>
-                                        <ul>
-                                            <li><a href="products.html">Men</a></li>
-                                            <li><a href="products.html">Women</a></li>
-                                            <li><a href="products.html">Brands</a></li>
-                                            <li><a href="products.html">Kids</a></li>
-                                            <li><a href="products.html">Accessories</a></li>
-                                            <li><a href="products.html">Style Videos</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col1 me-one">
-                                        <h4>Popular Brands</h4>
-                                        <ul>
-                                            <li><a href="products.html">Levis</a></li>
-                                            <li><a href="products.html">Persol</a></li>
-                                            <li><a href="products.html">Nike</a></li>
-                                            <li><a href="products.html">Edwin</a></li>
-                                            <li><a href="products.html">New Balance</a></li>
-                                            <li><a href="products.html">Jack & Jones</a></li>
-                                            <li><a href="products.html">Paul Smith</a></li>
-                                            <li><a href="products.html">Ray-Ban</a></li>
-                                            <li><a href="products.html">Wood Wood</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                        <li class="grid"><a href="MessageManage.aspx">留言反馈</a>
                         </li>
-                        <li class="grid"><a href="#">Kids</a>
-                            <div class="mepanel">
-                                <div class="row">
-                                    <div class="col1 me-one">
-                                        <h4>Shop</h4>
-                                        <ul>
-                                            <li><a href="products.html">New Arrivals</a></li>
-                                            <li><a href="products.html">Men</a></li>
-                                            <li><a href="products.html">Women</a></li>
-                                            <li><a href="products.html">Accessories</a></li>
-                                            <li><a href="products.html">Kids</a></li>
-                                            <li><a href="products.html">login</a></li>
-                                            <li><a href="products.html">Brands</a></li>
-                                            <li><a href="products.html">My Shopping Bag</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col1 me-one">
-                                        <h4>Style Zone</h4>
-                                        <ul>
-                                            <li><a href="products.html">Men</a></li>
-                                            <li><a href="products.html">Women</a></li>
-                                            <li><a href="products.html">Brands</a></li>
-                                            <li><a href="products.html">Kids</a></li>
-                                            <li><a href="products.html">Accessories</a></li>
-                                            <li><a href="products.html">Style Videos</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col1 me-one">
-                                        <h4>Popular Brands</h4>
-                                        <ul>
-                                            <li><a href="products.html">Levis</a></li>
-                                            <li><a href="products.html">Persol</a></li>
-                                            <li><a href="products.html">Nike</a></li>
-                                            <li><a href="products.html">Edwin</a></li>
-                                            <li><a href="products.html">New Balance</a></li>
-                                            <li><a href="products.html">Jack & Jones</a></li>
-                                            <li><a href="products.html">Paul Smith</a></li>
-                                            <li><a href="products.html">Ray-Ban</a></li>
-                                            <li><a href="products.html">Wood Wood</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                        <li class="grid"><a href="Register.aspx">注册</a>
                         </li>
-                        <li class="grid"><a href="#">Sports</a>
-                            <div class="mepanel">
-                                <div class="row">
-                                    <div class="col1 me-one">
-                                        <h4>Shop</h4>
-                                        <ul>
-                                            <li><a href="products.html">New Arrivals</a></li>
-                                            <li><a href="products.html">Men</a></li>
-                                            <li><a href="products.html">Women</a></li>
-                                            <li><a href="products.html">Accessories</a></li>
-                                            <li><a href="products.html">Kids</a></li>
-                                            <li><a href="products.html">login</a></li>
-                                            <li><a href="products.html">Brands</a></li>
-                                            <li><a href="products.html">My Shopping Bag</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col1 me-one">
-                                        <h4>Style Zone</h4>
-                                        <ul>
-                                            <li><a href="products.html">Men</a></li>
-                                            <li><a href="products.html">Women</a></li>
-                                            <li><a href="products.html">Brands</a></li>
-                                            <li><a href="products.html">Kids</a></li>
-                                            <li><a href="products.html">Accessories</a></li>
-                                            <li><a href="products.html">Style Videos</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col1 me-one">
-                                        <h4>Popular Brands</h4>
-                                        <ul>
-                                            <li><a href="products.html">Levis</a></li>
-                                            <li><a href="products.html">Persol</a></li>
-                                            <li><a href="products.html">Nike</a></li>
-                                            <li><a href="products.html">Edwin</a></li>
-                                            <li><a href="products.html">New Balance</a></li>
-                                            <li><a href="products.html">Jack & Jones</a></li>
-                                            <li><a href="products.html">Paul Smith</a></li>
-                                            <li><a href="products.html">Ray-Ban</a></li>
-                                            <li><a href="products.html">Wood Wood</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="grid"><a href="#">Brands</a>
-                            <div class="mepanel">
-                                <div class="row">
-                                    <div class="col1 me-one">
-                                        <h4>Shop</h4>
-                                        <ul>
-                                            <li><a href="products.html">New Arrivals</a></li>
-                                            <li><a href="products.html">Men</a></li>
-                                            <li><a href="products.html">Women</a></li>
-                                            <li><a href="products.html">Accessories</a></li>
-                                            <li><a href="products.html">Kids</a></li>
-                                            <li><a href="products.html">login</a></li>
-                                            <li><a href="products.html">Brands</a></li>
-                                            <li><a href="products.html">My Shopping Bag</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col1 me-one">
-                                        <h4>Style Zone</h4>
-                                        <ul>
-                                            <li><a href="products.html">Men</a></li>
-                                            <li><a href="products.html">Women</a></li>
-                                            <li><a href="products.html">Brands</a></li>
-                                            <li><a href="products.html">Kids</a></li>
-                                            <li><a href="products.html">Accessories</a></li>
-                                            <li><a href="products.html">Style Videos</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col1 me-one">
-                                        <h4>Popular Brands</h4>
-                                        <ul>
-                                            <li><a href="products.html">Levis</a></li>
-                                            <li><a href="products.html">Persol</a></li>
-                                            <li><a href="products.html">Nike</a></li>
-                                            <li><a href="products.html">Edwin</a></li>
-                                            <li><a href="products.html">New Balance</a></li>
-                                            <li><a href="products.html">Jack & Jones</a></li>
-                                            <li><a href="products.html">Paul Smith</a></li>
-                                            <li><a href="products.html">Ray-Ban</a></li>
-                                            <li><a href="products.html">Wood Wood</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                        <li class="grid"><a href="Login.aspx">退出</a>
+
                         </li>
                     </ul>
                 </div>
                 <div class="clearfix"></div>
             </div>
         </div>
-        <!--bottom-header-->
-        <div class="copyrights">Collect from <a href="http://www.cssmoban.com/">网页模板</a></div>
+
         <!--banner-starts-->
         <div class="bnr" id="home">
             <div id="top" class="callbacks_container">
@@ -371,7 +150,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     auto: true,
                     pager: true,
                     nav: false,
-                    speed: 500,
+                    speed: 200,
                     namespace: "callbacks",
                     before: function () {
                         $('.events').append("<li>before event fired.</li>");
@@ -384,16 +163,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             });
         </script>
         <!--End-slider-script-->
-            <!--start-abt-shoe-->
-            <div class="abt-shoe">
-                <div class="container">
-                        <!--用户自定义控件添加处-->
-                         <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>
+        <!--start-abt-shoe-->
+        <div class="abt-shoe">
+            <div class="container">
+                <!--用户自定义控件添加处-->
+                <div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
                 </div>
             </div>
+        </div>
         <!--start-footer-->
         <div class="footer">
             <div class="container">
@@ -402,7 +181,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <h3>ABOUT US</h3>
                         <ul>
                             <li><a href="#">Who We Are</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
                             <li><a href="#">Our Sites</a></li>
                             <li><a href="#">In The News</a></li>
                             <li><a href="#">Team</a></li>
@@ -412,9 +191,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="col-md-3 footer-left">
                         <h3>YOUR ACCOUNT</h3>
                         <ul>
-                            <li><a href="account.html">Your Account</a></li>
+                            <li><a href="#">Your Account</a></li>
                             <li><a href="#">Personal Information</a></li>
-                            <li><a href="contact.html">Addresses</a></li>
+                            <li><a href="#">Addresses</a></li>
                             <li><a href="#">Discount</a></li>
                             <li><a href="#">Track your order</a></li>
                         </ul>
@@ -449,7 +228,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="footer-text">
             <div class="container">
                 <div class="footer-main">
-                    <p class="footer-class">Copyright &copy; 2015.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+                    <p class="footer-class">Copyright &copy; 2019.Company name Hi Go</p>
                 </div>
             </div>
             <script type="text/javascript">

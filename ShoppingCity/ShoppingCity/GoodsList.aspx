@@ -1,61 +1,9 @@
 ﻿<%@ Page Title="Hi Go商品列表" Language="C#" MasterPageFile="~/ShoppingCity.Master" AutoEventWireup="true" CodeBehind="GoodsList.aspx.cs" Inherits="ShoppingCity.GoodsList" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <%--    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/index.js"></script>
-    <link href="css/picstyle.css" rel="stylesheet" />
-    <style type="text/css">
-        .tb {
-            width: 200px;
-            height: 300px;
-        }
-       
-        a {
-            text-decoration: none;
-        }
 
-        .img {
-            width: 200px;
-            height: 200px;
-            border: 0;
-        }
-
-        .tdl {
-            width: 110px;
-            padding: 5px;
-        }
-
-        .tdr {
-            width: 80px;
-            padding: 5px;
-        }
-    </style>--%>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-   <%-- <p id="loading">loading...</p>
-    <div id="images">
-        <div class="lighten">
-            <img src="images/lighten1.jpg" alt="" />
-            <img src="images/lighten2.jpg" alt="" />
-            <img src="images/lighten3.jpg" alt="" />
-            <img src="images/lighten4.jpg" alt="" />
-        </div>
-        <div class="normal">
-            <img src="images/normal1.jpg" alt="" />
-            <img src="images/normal2.jpg" alt="" />
-            <img src="images/normal3.jpg" alt="" />
-            <img src="images/normal4.jpg" alt="" />
-        </div>
-        <nav>
-            <ul>
-                <li class="pre"></li>
-                <li class="next"></li>
-            </ul>
-        </nav>
-    </div>
-    <div>
-
-        <br />--%>
         <asp:Literal ID="ltCurUser" runat="server"></asp:Literal>
         <br />
         搜索条件：<br />
@@ -63,10 +11,10 @@
         关键字：<asp:TextBox ID="txtGName" runat="server"></asp:TextBox>
         类别：<asp:DropDownList ID="ddlGType" runat="server" DataSourceID="sqlGType" DataTextField="tName" DataValueField="tID" OnDataBound="ddlGType_DataBound">
         </asp:DropDownList>
-        价格区间：<asp:TextBox ID="txtPriceLow" runat="server" Width="56px"></asp:TextBox>
-        -<asp:TextBox ID="txtPriceHigh" runat="server" Width="56px"></asp:TextBox>
+        价格区间：<asp:TextBox ID="txtPriceLow" runat="server" Width="56px" TextMode="Number" ></asp:TextBox>
+        -<asp:TextBox ID="txtPriceHigh" runat="server" Width="56px" TextMode="Number" ></asp:TextBox>
         <br />
-        ： 
+        销量： 
             <asp:RadioButtonList ID="rdltSaleQty" runat="server" AutoPostBack="True" RepeatDirection="Horizontal">
                 <asp:ListItem>显示全部</asp:ListItem>
                 <asp:ListItem Value="19">20以下</asp:ListItem>
@@ -153,5 +101,4 @@
         <asp:Label ID="lblTotalPage" runat="server" Text="" />
         <asp:LinkButton ID="lbtnPre" runat="server" OnCommand="LinkBtnClick" CommandName="Pre">上一页</asp:LinkButton>
         <asp:LinkButton ID="lbtnNext" runat="server" OnCommand="LinkBtnClick" CommandName="Next">下一页</asp:LinkButton>
-    </div>
 </asp:Content>
